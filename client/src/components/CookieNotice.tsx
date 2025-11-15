@@ -86,9 +86,9 @@ const StyledWrapper = styled.div`
   }
 
   .accept {
-    font-size: 0.75rem;
+    font-size: 1rem;
     line-height: 1rem;
-    background-color: rgb(17 24 39);
+    background-color: #3279C6;
     font-weight: 500;
     border-radius: 0.5rem;
     color: #fff;

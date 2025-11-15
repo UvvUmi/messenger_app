@@ -3,9 +3,9 @@
   line-height: 1.5;
   font-weight: 400;
 
-    color-scheme: light dark;
+    color-scheme: light;
     color: rgba(255, 255, 255, 0.87);
-    background-color: rgba(255, 255, 255, 0.45);
+    background-color: #3279C6;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -46,35 +46,46 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
   font-weight: bold;
+  color: white;
+  outline: none;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #3279C6;
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: none;
 }
 
 #cookieNotice {
     position: fixed;
-    right: 5vw;
-    bottom: 5vh;
+    right: 1vw;
+    bottom: 1vh;
     z-index: 1000;
+}
+
+#loginCard {
+    padding: 2rem 2rem 0rem 2rem;
+    border-radius: 1rem;
+    background-color: #2c2c2c;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2.5px solid white;
+    transition: opacity 0.4s ease-out;
+}
+#logoWrapper {
+    display: flex;
+    justify-content: center;
+}
+#loginIcon {
+    width: 10vw;
 }
 
 #loginForm {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50vw;
-}
-
-#loginCard {
-    padding: 2rem;
-    border-radius: 1rem;
-    background-color: #2c2c2c;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -55%);
+    width: 30vw;
 }
 
 #loginButton {
@@ -94,7 +105,7 @@ button:focus-visible {
 
 #logEmailInput:hover, #logPassInput:hover, #logEmailInput:focus, #logPassInput:focus {
     outline: none !important;
-    border-color: #646cff;
+    border-color: #3279C6;
 }
 
 #logPassInput {
@@ -107,6 +118,7 @@ button:focus-visible {
     align-items: center;
     text-align: center;
     color: lightgray;
+    font-size: 18px;
 }
 
 .separator::before,
@@ -122,6 +134,102 @@ button:focus-visible {
 
 .separator:not(:empty)::after {
     margin-left: .25em;
+}
+
+#registerTitle {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 5px;
+    background-color: #3279C6;
+    border-radius: 15px 10px 0px 0px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+#registerTitle:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+#registerForm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    width: 30vw;
+}
+
+#registerCard {
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #3279C6;
+    border: 2.5px solid white;
+}
+
+.registerFormInputs {
+  font-size: 22px;
+  outline: none;
+  width: 90%;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+}
+
+#registrationBtnWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+#registrationBtnWrapper > button {
+  background-color: #213547;
+  outline: none;
+  width: 45%;
+}
+
+#regAvatarUpload {
+  display: none;
+}
+
+#regCheckBoxWrapper {
+  margin: 10px 0px 10px 0px;
+}
+
+#uploadAvatar {
+  display: none;
+}
+
+#uploadAvatarLink {
+  display: flex;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+#uploadAvatarLink > img {
+  width: 25px;
+  background-color: white;
+  border-radius: 5px;
+  margin-right: 5px
+}
+
+#registerButton {
+  border:none;
+  outline: none;
+}
+
+#registerButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    border: none;
+    transform: none;
+}
+
+#registerButton:not(:disabled):hover {
+    transform: translateY(-2px);
+    transition: transform 0.15s ease;
 }
 
 @media (prefers-color-scheme: light) {

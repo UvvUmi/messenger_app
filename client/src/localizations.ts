@@ -38,6 +38,34 @@ export const text: Record<string, Record<string, string>> = {
     separatorAuth: {
         'en-US': 'or',
         'lt': 'arba',
+    },
+    logoAlt: {
+        'en-US': 'TSirp! logo',
+        'lt': 'TSirp! logotipas',
+    },
+    registerHeader: {
+        'en-US': 'Create profile',
+        'lt': 'Sukurti profilį',
+    },
+    returnToLogin: {
+        'en-US': 'Login instead',
+        'lt': 'Turiu paskyrą',
+    },
+    inputName: {
+        'en-US': 'Enter your name',
+        'lt': 'Įveskite savo vardą',
+    },
+    uploadAvatarText: {
+        'en-US': 'Upload your avatar',
+        'lt': 'Įkelkite savo avataro paveiksliuką',
+    },
+    registrationCheckbox: {
+        'en-US': 'I Agree with the use of data and cookies policy',
+        'lt': 'Sutinku su duomenų ir slapukų naudojimo politika',
+    },
+    agreementRequiredReminder: {
+        'en-US': 'You must agree with data and cookies policy!',
+        'lt': 'Reikia sutikti su duomenų ir slapukų politika!',
     }
 
 };
